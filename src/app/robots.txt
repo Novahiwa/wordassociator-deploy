@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Allow: about
+
+Sitemap: https://wam.kesug.com/sitemap.xml

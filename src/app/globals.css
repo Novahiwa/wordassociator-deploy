@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "animate.css";
+:root{
+    /* --primary:#f7ba34; */
+    /* --primary:#00800073; */
+    --primary:#0e2b4d;
+    --secondary:#69a79c;
+    --light:#f7f7f7;
+    --dark:#333333;
+    --dark2:#999999;
+    --dark3:#dfdfdf91;
+}
