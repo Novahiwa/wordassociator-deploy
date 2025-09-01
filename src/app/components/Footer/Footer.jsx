@@ -1,19 +1,17 @@
+"use client";
 import Image from "next/image";
 import logo from "../../assets/logo.png";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTelegram,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebook, FaTelegram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { TbWorldWww, TbX } from "react-icons/tb";
 import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="py-10 bg-[#f7f7f7]">
-      <div className="mx-auto p-[1rem] sm:p-[1rem] lg:p-[2rem] xl:p-[2rem] 2xl:p-[4rem] container flex justify-between items-center">
+      <div
+       
+        className="mx-auto p-[1rem] sm:p-[1rem] lg:p-[2rem] xl:p-[2rem] 2xl:p-[4rem] container flex justify-between items-center"
+      >
         <div className="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-14 md:gap-4">
           <div className="space-y-4 max-w-[300px]">
             <h1 className="text-2xl font-bold">Word Associator</h1>
@@ -90,7 +88,7 @@ const Footer = () => {
               <a href="https://youtube.com/@wordassociator?si=xUbMPbNR1q3kgK1N">
                 <FaYoutube className="cursor-pointer hover:text-[var(--primary)] hover:scale-105 duration-200" />
               </a>
-              
+
               <a href="https://t.me/wordassociator">
                 <FaTelegram className="cursor-pointer hover:text-[var(--primary)] hover:scale-105 duration-200" />
               </a>

@@ -21,8 +21,18 @@ export default function Navbar() {
 
   const NavbarMenu = [
     { id: 1, title: "Home", path: "/", icon: <AiOutlineHome /> },
-    { id: 2, title: "Services", path: "/services", icon: <AiOutlineSolution /> },
-    { id: 3, title: "About", path: "/about", icon: <AiOutlineQuestionCircle /> },
+    {
+      id: 2,
+      title: "Services",
+      path: "/services",
+      icon: <AiOutlineSolution />,
+    },
+    {
+      id: 3,
+      title: "About",
+      path: "/about",
+      icon: <AiOutlineQuestionCircle />,
+    },
     { id: 4, title: "Contact", path: "/contact", icon: <AiOutlinePhone /> },
   ];
 
@@ -35,8 +45,15 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[var(--dark3)] relative z-50">
-      <div className="container mx-auto p-4 flex justify-between items-center">
-        <Image src={logo} alt="word associator logo" className="w-[200px] cursor-pointer" />
+      <div
+        
+        className="container mx-auto p-4 flex justify-between items-center"
+      >
+        <Image
+          src={logo}
+          alt="word associator logo"
+          className="w-[200px] cursor-pointer"
+        />
 
         {/* Desktop Menu */}
         <div className="hidden lg:block">

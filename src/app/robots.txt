@@ -1,5 +1,15 @@
+# Allow all bots to crawl the site
 User-Agent: *
+Disallow: /api/               # block backend API endpoints
+Disallow: /admin/             # block admin dashboard (if exists)
+Disallow: /login/             # block login page
+Disallow: /get_started/       # optional: block Google indexing login flow pages
 Allow: /
-Allow: about
 
+# Explicitly allow important pages
+Allow: /about
+Allow: /services
+Allow: /contact
+
+# Sitemap location
 Sitemap: https://wam.kesug.com/sitemap.xml

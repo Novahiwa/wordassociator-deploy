@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { GoogleLogin } from "@react-oauth/google";
 import { jwtDecode } from "jwt-decode";
 import { useRouter } from "next/navigation";
@@ -11,9 +11,19 @@ function Landing() {
   return (
     <div className="mx-auto p-8 container flex justify-between items-center">
       <div className="w-[80%]">
-        <h1 className="font-bold text-2xl mt-8">Sign in</h1>
+        <h1
+         
+          className="font-bold text-2xl mt-8"
+        >
+          Sign in
+        </h1>
         <div className="flex justify-evenly items-center flex-col mt-12 md:flex-row">
-          <Image src={aboutImage} alt="about image" className="w-50" />
+          <Image
+           
+            src={aboutImage}
+            alt="about image"
+            className="w-50"
+          />
           <div className="mt-8 flex items-center justify-center">
             <GoogleLogin
               onSuccess={(credentialResponse) => {

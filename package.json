@@ -11,9 +11,12 @@
   "dependencies": {
     "@google/genai": "^1.13.0",
     "@react-oauth/google": "^0.12.2",
+    "@vercel/speed-insights": "^1.2.0",
     "animate.css": "^4.1.1",
     "axios": "^1.11.0",
     "dotnet": "^1.1.4",
+    "formik": "^2.4.6",
+    "framer-motion": "^12.23.12",
     "jest": "^30.0.5",
     "jwt-decode": "^4.0.0",
     "lucide-react": "^0.539.0",
@@ -26,6 +29,8 @@
     "recoil": "^0.7.7",
     "redux": "^5.0.1",
     "styled-components": "^6.1.19",
+    "sweetalert2": "^11.22.5",
+    "yup": "^1.7.0",
     "zustand": "^5.0.7"
   },
   "devDependencies": {
