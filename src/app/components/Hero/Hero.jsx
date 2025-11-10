@@ -21,7 +21,7 @@ const Hero = () => {
             <span className="text-[var(--secondary)]"> Word Associator </span>
             Builds it Your Way
           </h1>
-          <p className="text-lg text-gray-200 leading-relaxed">
+          <p className="text-lg text-gray-800 leading-relaxed">
             Word Associator empowers aspiring developers to master coding skills, build projects, 
             and launch their tech careers with unique, user-focused web and app solutions.
           </p>

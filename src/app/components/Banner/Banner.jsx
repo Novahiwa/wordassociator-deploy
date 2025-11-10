@@ -34,7 +34,7 @@ const Banner = () => {
               </div>
               <div className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl">
                 <GrUserExpert className="text-2xl" />
-                <p className="text-lg">Professional Web Development</p>
+                <p className="text-lg">Professional Web Dev</p>
               </div>
               <div className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl">
                 <MdOutlineAccessTime className="text-2xl" />
