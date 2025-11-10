@@ -22,7 +22,7 @@ const Hero = () => {
             Builds it Your Way
           </h1>
           <p className="text-lg text-gray-800 leading-relaxed">
-            Word Associator empowers aspiring developers to master coding skills, build projects, 
+            Word Associator empowers aspiring developers to master coding skills, build projects 
             and launch their tech careers with unique, user-focused web and app solutions.
           </p>
           <Link href={target}>
