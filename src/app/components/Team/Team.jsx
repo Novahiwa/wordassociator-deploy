@@ -7,8 +7,12 @@ const Team = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
+    // Use a free HTTPS proxy to fetch HTTP API
+    const proxyUrl = "https://corsproxy.io/?";
+    const apiUrl = "http://wam.scienceontheweb.net/join.php";
+
     axios
-      .get("http://wam.scienceontheweb.net/join.php")
+      .get(proxyUrl + encodeURIComponent(apiUrl))
       .then((res) => {
         setUsers(res.data);
       })
@@ -16,8 +20,9 @@ const Team = () => {
         console.error(err);
         setUsers([
           {
-            Id: "1",
+            Id: "0",
             name: "Unexpected error occurred",
+            role: "",
             error: "failed",
           },
         ]);
@@ -27,7 +32,7 @@ const Team = () => {
   return (
     <>
       <div className="container mx-auto items-center px-4 sm:px-8 lg:px-16 xl:px-20 2xl:px-24 mb-8">
-        <h1 className=" text-2xl md:text-3xl capitalize font-bold">our team</h1>
+        <h1 className="text-2xl md:text-3xl capitalize font-bold">Our Team</h1>
       </div>
       <div className="container mx-auto grid grid-cols-1 cursor-pointer md:grid-cols-2 lg:grid-cols-3 items-center px-4 sm:px-8 lg:px-16 xl:px-20 2xl:px-24 gap-12 mb-8">
         {users.map((user) => (
