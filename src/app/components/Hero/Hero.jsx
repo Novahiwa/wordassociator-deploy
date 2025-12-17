@@ -2,6 +2,7 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import HeroPng from "../../assets/undraw_secure-login_m11a.svg";
+import festivalImg from "../../assets/festival.png";
 import Image from "next/image";
 import Link from "next/link";
 import { useUser } from "../../context/UserContext";
@@ -9,6 +10,7 @@ import { useUser } from "../../context/UserContext";
 const Hero = () => {
   const { user } = useUser();
   const target = user ? "/home" : "/get_started";
+  const festival = false;
 
   return (
     <section className="bg-[var(--dark3)] overflow-hidden relative">
@@ -21,9 +23,7 @@ const Hero = () => {
             <span className="text-[var(--secondary)]"> Word Associator </span>
             Builds it Your Way
           </h1>
-          <p className="text-lg text-gray-800 leading-relaxed">
-            Word Associator empowers aspiring developers to master coding skills, build projects 
-            and launch their tech careers with unique, user-focused web and app solutions.
+          <p className="text-lg text-gray-800 leading-relaxed"> At Word Associator, we empower developers to launch their tech careers. You’ll gain practical skills, build professional projects and learn to develop unique digital solutions focused on real user needs
           </p>
           <Link href={target}>
             <button className="bg-[var(--primary)] text-white font-semibold rounded-lg hover:bg-[var(--secondary)] duration-200 shadow-md py-3 px-6 flex items-center gap-2">
@@ -35,12 +35,19 @@ const Hero = () => {
 
         {/* Hero Image */}
         <div className="flex justify-center md:justify-end">
-          <Image
+        {
+          festival ?   <Image
+            src={festivalImg}
+            alt="Illustration of secure digital login and tech workflow"
+            className="w-[300px] sm:w-[400px] md:w-[500px] xl:w-[600px] object-cover drop-shadow-2xl"
+            priority
+          /> :  <Image
             src={HeroPng}
             alt="Illustration of secure digital login and tech workflow"
             className="w-[300px] sm:w-[400px] md:w-[500px] xl:w-[600px] object-cover drop-shadow-2xl"
             priority
           />
+        }
         </div>
       </div>
 

@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import Swal from "sweetalert2";
 
 const HeroForm = () => {
-  let join = false;
+  let join = true;
 
   const formik = useFormik({
     initialValues: {
@@ -208,20 +208,16 @@ const HeroForm = () => {
             <option value="mobile app developer">Mobile App Developer</option>
             <option value="game developer">Game Developer</option>
             <option value="api developer">API Developer</option>
-            <option value="cloud engineer">Cloud Engineer</option>
             <option value="ui ux designer">UI/UX Designer</option>
             <option value="graphic designer">Graphic Designer</option>
             <option value="web designer">Web Designer</option>
             <option value="motion graphics designer">
               Motion Graphics Designer
             </option>
-            <option value="illustrator">Illustrator</option>
             <option value="brand designer">Brand Designer</option>
-            <option value="copywriter">Copywriter</option>
             <option value="technical writer">Technical Writer</option>
             <option value="content creator">Content Creator</option>
             <option value="social media manager">Social Media Manager</option>
-            <option value="community manager">Community Manager</option>
             <option value="product manager">Product Manager</option>
             <option value="business analyst">Business Analyst</option>
             <option value="marketing strategist">Marketing Strategist</option>
@@ -231,16 +227,12 @@ const HeroForm = () => {
               Machine Learning Engineer
             </option>
             <option value="ai researcher">AI Researcher</option>
-            <option value="research assistant">Research Assistant</option>
             <option value="qa tester">QA Tester</option>
-            <option value="automation tester">Automation Tester</option>
             <option value="security tester">Security Tester</option>
             <option value="customer support lead">Customer Support Lead</option>
             <option value="technical support specialist">
               Technical Support Specialist
             </option>
-            <option value="documentation manager">Documentation Manager</option>
-            <option value="training coordinator">Training Coordinator</option>
             <option value="recruiter">Recruiter / Talent Scout</option>
             <option value="finance manager">Finance & Budget Manager</option>
             <option value="legal advisor">Legal/Compliance Advisor</option>

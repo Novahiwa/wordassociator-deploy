@@ -16,9 +16,7 @@ const Footer = () => {
           <div className="space-y-4 max-w-[300px]">
             <h1 className="text-2xl font-bold">Word Associator</h1>
             <p className="text-[var(--dark)]">
-              Word associator is a platform dedicated to empowing aspiring
-              developers. we provide a comprehensive learning experience
-              designed to help you master coding skills, build projects and
+              Word associator is a platform dedicated to developers. we provide a comprehensive  experience designed to help you master digital skills, build projects and
               launch your tech career.
             </p>
           </div>
