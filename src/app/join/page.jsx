@@ -5,11 +5,7 @@ import * as Yup from "yup";
 import Swal from "sweetalert2";
 
 const HeroForm = () => {
-  Swal.fire({
-    icon: "warning",
-    title: "warning",
-    text: "form submission not working. Please try again later.",
-  });
+
   let join = true;
 
   const formik = useFormik({
